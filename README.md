@@ -1,1 +1,1 @@
-# Task 2: Basic Automation
+# Task 2: Basic Selenium
