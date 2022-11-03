@@ -28,7 +28,7 @@ public class BasicSeleniumTest {
 
     @Test
     public void verifyCRUDProject() throws InterruptedException {
-        String nameProject="TEST"+new Date().getTime();
+        String nameProject="Wil_"+new Date().getTime();
         String nameTask1="Take over the world";
         String nameTask2="Be happy";
         String nameTask3="Buy bread, milk, eggs";
@@ -61,16 +61,10 @@ public class BasicSeleniumTest {
         driver.findElement(By.id("NewItemContentInput")).sendKeys(nameTask2);
         driver.findElement(By.id("NewItemAddButton")).click();
         Thread.sleep(1000);
-//
-//        //Task 3
-//        driver.findElement(By.id("NewItemContentInput")).sendKeys(nameTask3);
-//        driver.findElement(By.id("NewItemAddButton")).click();
-//        Thread.sleep(1000);
 
-        //edit task 1
-        driver.findElement(By.xpath(" //div[text()='"+nameTask1+"'] ")).click();
-        String variable1 = driver.findElement(By.xpath(" //div[text()='" + nameTask1 + "'] ")).getAttribute("itemid");
-        System.out.println(variable1);
-        
+        //Task 3
+        driver.findElement(By.id("NewItemContentInput")).sendKeys(nameTask3);
+        driver.findElement(By.id("NewItemAddButton")).click();
+        Thread.sleep(1000);
     }
 }
