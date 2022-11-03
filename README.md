@@ -1,1 +1,1 @@
-# QA_automation
+# Task 2: Basic Automation
